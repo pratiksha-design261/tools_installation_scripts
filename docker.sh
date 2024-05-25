@@ -10,10 +10,12 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 
 sudo apt update -y
 
-apt-cache policy docker-ce -y
+apt-cache policy docker-ce              ---{-y removed as its giving errro}
 
 sudo apt install docker-ce -y
 
 #sudo systemctl status docker
 
 sudo chmod 777 /var/run/docker.sock
+
+docker -v
